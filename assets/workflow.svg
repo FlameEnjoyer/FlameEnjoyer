@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="326" viewBox="0 0 1200 326" role="img" aria-labelledby="t d">
   <title id="t">How I work</title>
   <desc id="d">Five-step loop: combustion experiments and CFD produce data, the data trains surrogate models, the surrogates drive multi-objective optimization, and the result is cleaner hydrogen and ammonia energy systems. The optimum is validated back in CFD.</desc>
   <style>
@@ -32,11 +32,11 @@
     <linearGradient id="c3" gradientUnits="userSpaceOnUse" x1="696" x2="750"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
     <linearGradient id="c4" gradientUnits="userSpaceOnUse" x1="938" x2="992"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#34d399"/></linearGradient>
     <linearGradient id="cb" gradientUnits="userSpaceOnUse" x1="842" x2="116"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#ff6b1a"/></linearGradient>
-    <clipPath id="card"><rect width="1200" height="340" rx="20"/></clipPath>
+    <clipPath id="card"><rect width="1200" height="326" rx="20"/></clipPath>
   </defs>
 
   <g clip-path="url(#card)">
-    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="326" fill="url(#bg)"/>
   </g>
 
   <!-- connectors -->
@@ -45,29 +45,29 @@
     <path class="flow" d="M454 94H500" stroke="url(#c2)"/>
     <path class="flow" d="M696 94H742" stroke="url(#c3)"/>
     <path class="flow" d="M938 94H984" stroke="url(#c4)"/>
-    <path class="back" d="M842 230C842 300 116 300 116 240" stroke="url(#cb)"/>
+    <path class="back" d="M842 218C842 288 116 288 116 228" stroke="url(#cb)"/>
   </g>
   <path d="M257 88L266 94L257 100Z" fill="#fbbf24"/>
   <path d="M499 88L508 94L499 100Z" fill="#38bdf8"/>
   <path d="M741 88L750 94L741 100Z" fill="#a78bfa"/>
   <path d="M983 88L992 94L983 100Z" fill="#34d399"/>
-  <path d="M110 240L116 230L122 240Z" fill="#ff6b1a"/>
+  <path d="M110 228L116 218L122 228Z" fill="#ff6b1a"/>
   <g fill="#fff">
     <circle r="3"><animateMotion dur="1.4s" repeatCount="indefinite" path="M212 94H258"/><animate attributeName="opacity" values="0;1;0" dur="1.4s" repeatCount="indefinite"/></circle>
     <circle r="3"><animateMotion dur="1.4s" begin=".35s" repeatCount="indefinite" path="M454 94H500"/><animate attributeName="opacity" values="0;1;0" dur="1.4s" begin=".35s" repeatCount="indefinite"/></circle>
     <circle r="3"><animateMotion dur="1.4s" begin=".7s" repeatCount="indefinite" path="M696 94H742"/><animate attributeName="opacity" values="0;1;0" dur="1.4s" begin=".7s" repeatCount="indefinite"/></circle>
     <circle r="3"><animateMotion dur="1.4s" begin="1.05s" repeatCount="indefinite" path="M938 94H984"/><animate attributeName="opacity" values="0;1;0" dur="1.4s" begin="1.05s" repeatCount="indefinite"/></circle>
-    <circle r="3"><animateMotion dur="4s" repeatCount="indefinite" path="M842 230C842 300 116 300 116 240"/><animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite"/></circle>
+    <circle r="3"><animateMotion dur="4s" repeatCount="indefinite" path="M842 218C842 288 116 288 116 228"/><animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite"/></circle>
   </g>
-  <text x="479" y="318" text-anchor="middle" class="mono" font-size="14" fill="#8b949e">↻  validate the optimum in CFD, then iterate</text>
+  <text x="479" y="304" text-anchor="middle" class="mono" font-size="14" fill="#8b949e">↻  validate the optimum in CFD, then iterate</text>
 
   <!-- node cards -->
   <g stroke-width="1.5">
-    <rect x="26" y="28" width="180" height="196" rx="16" fill="#161b22" stroke="#ff6b1a" stroke-opacity=".45"/>
-    <rect x="268" y="28" width="180" height="196" rx="16" fill="#161b22" stroke="#fbbf24" stroke-opacity=".45"/>
-    <rect x="510" y="28" width="180" height="196" rx="16" fill="#161b22" stroke="#38bdf8" stroke-opacity=".45"/>
-    <rect x="752" y="28" width="180" height="196" rx="16" fill="#161b22" stroke="#a78bfa" stroke-opacity=".45"/>
-    <rect x="994" y="28" width="180" height="196" rx="16" fill="#161b22" stroke="#34d399" stroke-opacity=".45"/>
+    <rect x="26" y="28" width="180" height="184" rx="16" fill="#161b22" stroke="#ff6b1a" stroke-opacity=".45"/>
+    <rect x="268" y="28" width="180" height="184" rx="16" fill="#161b22" stroke="#fbbf24" stroke-opacity=".45"/>
+    <rect x="510" y="28" width="180" height="184" rx="16" fill="#161b22" stroke="#38bdf8" stroke-opacity=".45"/>
+    <rect x="752" y="28" width="180" height="184" rx="16" fill="#161b22" stroke="#a78bfa" stroke-opacity=".45"/>
+    <rect x="994" y="28" width="180" height="184" rx="16" fill="#161b22" stroke="#34d399" stroke-opacity=".45"/>
   </g>
   <g class="mono" font-size="12">
     <text x="40" y="52" fill="#ff6b1a">01</text>
@@ -84,17 +84,12 @@
       <text x="842" y="164">Optimization</text>
       <text x="1084" y="164">Clean Energy</text>
     </g>
-    <g font-size="14.5" fill="#8b949e">
-      <text x="116" y="190">Experiments · Cantera</text>
-      <text x="116" y="210">Fluent · OpenFOAM</text>
-      <text x="358" y="190">DoE sweeps · CFD QoIs</text>
-      <text x="358" y="210">flame images · NOx</text>
-      <text x="600" y="190">GP/Kriging · GBMs · NNs</text>
-      <text x="600" y="210">scikit-learn · PyTorch</text>
-      <text x="842" y="190">NSGA-II/III · Pareto</text>
-      <text x="842" y="210">sensitivity analysis</text>
-      <text x="1084" y="190">low-NOx H₂ / NH₃</text>
-      <text x="1084" y="210">turbines &amp; systems</text>
+    <g font-size="15.5" fill="#8b949e">
+      <text x="116" y="192">Experiments · CFD</text>
+      <text x="358" y="192">Sampling · Analysis</text>
+      <text x="600" y="192">Machine learning</text>
+      <text x="842" y="192">Multi-objective</text>
+      <text x="1084" y="192">Low emissions</text>
     </g>
   </g>
 
@@ -152,5 +147,5 @@
     <path class="pop" d="M4-24L-13 4H-1L-5 24L13-5H1Z" fill="#34d399"/>
   </g>
 
-  <rect x=".5" y=".5" width="1199" height="339" rx="20" fill="none" stroke="#30363d"/>
+  <rect x=".5" y=".5" width="1199" height="325" rx="20" fill="none" stroke="#30363d"/>
 </svg>
