@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="220" viewBox="0 0 480 220" role="img" aria-labelledby="t">
+  <title id="t">Hydrogen micro gas turbine combustor next to a Pareto front</title>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .flow { stroke-dasharray: 5 6; animation: flow 1s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -11; } }
+    .flame { transform-box: fill-box; transform-origin: 0% 50%; animation: flick 1.4s ease-in-out infinite; }
+    @keyframes flick { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(1.07, .9); } }
+    .spin { transform-box: fill-box; transform-origin: center; animation: spin 3s linear infinite; }
+    .ccw { animation-direction: reverse; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .ring { transform-box: fill-box; transform-origin: center; animation: ring 2s ease-out infinite; }
+    @keyframes ring { 0% { transform: scale(.6); opacity: .9; } 100% { transform: scale(2.4); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#111a24"/></linearGradient>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#c9d1d9" stroke-opacity=".05"/></pattern>
+    <linearGradient id="h2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#93c5fd"/>
+      <stop offset=".45" stop-color="#818cf8" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#ff7a18" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hot" gradientUnits="userSpaceOnUse" x1="276" x2="312"><stop offset="0" stop-color="#ff7a18" stop-opacity=".2"/><stop offset="1" stop-color="#ff7a18"/></linearGradient>
+    <clipPath id="c"><rect width="480" height="220" rx="16"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="480" height="220" fill="url(#bg)"/>
+    <rect width="480" height="220" fill="url(#grid)"/>
+  </g>
+
+  <rect x="14" y="14" width="213" height="24" rx="12" fill="#38bdf8" fill-opacity=".12" stroke="#38bdf8" stroke-opacity=".5"/>
+  <text x="120.5" y="30" text-anchor="middle" class="mono" font-size="11.5" letter-spacing="1" fill="#bae6fd">CFD → SURROGATE → PARETO</text>
+
+  <!-- casing, open at the exit -->
+  <path d="M286 112V94A22 22 0 0 0 264 72H46A22 22 0 0 0 24 94V162A22 22 0 0 0 46 184H264A22 22 0 0 0 286 162V144" fill="#0f151d" stroke="#484f58" stroke-width="1.5"/>
+  <text x="40" y="64" class="mono" font-size="11" fill="#8b949e">air</text>
+  <g stroke="#8b949e" stroke-opacity=".7" stroke-width="1.5" fill="none">
+    <path class="flow" d="M40 82H148"/>
+    <path class="flow" d="M40 174H148"/>
+  </g>
+  <g fill="#8b949e">
+    <path d="M147 78L155 82L147 86Z"/>
+    <path d="M147 170L155 174L147 178Z"/>
+    <!-- dilution jets -->
+    <path d="M172 84L176 92L180 84Z"/><path d="M208 84L212 92L216 84Z"/><path d="M244 84L248 92L252 84Z"/>
+    <path d="M172 172L176 164L180 172Z"/><path d="M208 172L212 164L216 172Z"/><path d="M244 172L248 164L252 172Z"/>
+  </g>
+
+  <!-- liner -->
+  <path d="M272 112V106A14 14 0 0 0 258 92H72A14 14 0 0 0 58 106V150A14 14 0 0 0 72 164H258A14 14 0 0 0 272 150V144" fill="#121a24" stroke="#8b949e" stroke-opacity=".8" stroke-width="1.5"/>
+  <path d="M272 112H296M272 144H296" stroke="#8b949e" stroke-opacity=".8" stroke-width="1.5"/>
+  <path d="M60 104l7 6M60 114l7 6M60 138l7 6M60 148l7 6" stroke="#c9d1d9" stroke-opacity=".6" stroke-width="1.5"/>
+
+  <!-- H2 lance + flame -->
+  <rect x="24" y="125" width="44" height="6" rx="1" fill="#6e7681"/>
+  <text x="30" y="119" class="mono" font-size="12" font-weight="700" fill="#93c5fd">H₂</text>
+  <g class="flame">
+    <path d="M68 128C82 110 114 106 148 114C166 118 182 124 198 128C182 132 166 138 148 142C114 150 82 146 68 128Z" fill="url(#h2)"/>
+    <path d="M68 128C80 119 100 117 122 121C134 124 142 126 152 128C142 130 134 132 122 135C100 139 80 137 68 128Z" fill="#e0f2fe" fill-opacity=".8"/>
+  </g>
+  <g fill="none" stroke="#7dd3fc" stroke-opacity=".55" stroke-width="1.3" stroke-dasharray="4 3">
+    <circle class="spin" cx="100" cy="102" r="8"/>
+    <circle class="spin ccw" cx="100" cy="154" r="8"/>
+  </g>
+
+  <!-- exhaust to turbine -->
+  <path class="flow" d="M276 128H312" stroke="url(#hot)" stroke-width="3"/>
+  <path d="M310 122L320 128L310 134Z" fill="#ff7a18"/>
+
+  <!-- Pareto front -->
+  <path d="M344 100H460M344 143H460" stroke="#30363d" stroke-dasharray="2 4"/>
+  <path d="M344 58V186H464" fill="none" stroke="#6e7681" stroke-width="1.4"/>
+  <path d="M340 64L344 56L348 64ZM458 182L466 186L458 190Z" fill="#6e7681"/>
+  <g class="mono" font-size="11" fill="#8b949e">
+    <text x="338" y="66" text-anchor="end">f₂</text>
+    <text x="464" y="204" text-anchor="end">f₁</text>
+  </g>
+  <g fill="#6e7681">
+    <circle cx="378" cy="92" r="2.4"/><circle cx="404" cy="112" r="2.4"/><circle cx="430" cy="100" r="2.4"/>
+    <circle cx="448" cy="136" r="2.4"/><circle cx="420" cy="130" r="2.4"/><circle cx="396" cy="128" r="2.4"/>
+  </g>
+  <path d="M352 70Q356 172 458 176" fill="none" stroke="#a78bfa" stroke-width="2"/>
+  <g fill="#a78bfa">
+    <circle cx="352" cy="70" r="3"/><circle cx="357.5" cy="106.8" r="3"/><circle cx="370.9" cy="136" r="3"/>
+    <circle cx="392.1" cy="157.2" r="3"/><circle cx="421.1" cy="170.4" r="3"/><circle cx="458" cy="176" r="3"/>
+  </g>
+  <circle class="ring" cx="380.5" cy="147.5" r="4.5" fill="none" stroke="#a78bfa" stroke-width="1.5"/>
+  <circle cx="380.5" cy="147.5" r="4.5" fill="#ddd6fe"/>
+  <text x="389" y="146" class="mono" font-size="11" fill="#ddd6fe">optimum</text>
+
+  <rect x=".5" y=".5" width="479" height="219" rx="16" fill="none" stroke="#30363d"/>
+</svg>

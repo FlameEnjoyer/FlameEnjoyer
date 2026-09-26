@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="220" viewBox="0 0 480 220" role="img" aria-labelledby="t">
+  <title id="t">Counterflow diffusion flame next to an extinction S-curve</title>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .flow { stroke-dasharray: 4 5; animation: flow 1.2s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -9; } }
+    .sheet { transform-box: fill-box; transform-origin: center; animation: sheet 2.2s ease-in-out infinite; }
+    @keyframes sheet { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(1.04, 1.25); } }
+    .ring { transform-box: fill-box; transform-origin: center; animation: ring 2s ease-out infinite; }
+    @keyframes ring { 0% { transform: scale(.6); opacity: .9; } 100% { transform: scale(2.4); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#1c170c"/></linearGradient>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#c9d1d9" stroke-opacity=".05"/></pattern>
+    <linearGradient id="sheetG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a18" stop-opacity="0"/>
+      <stop offset=".2" stop-color="#ff7a18"/>
+      <stop offset=".5" stop-color="#fff1b8"/>
+      <stop offset=".8" stop-color="#ff7a18"/>
+      <stop offset="1" stop-color="#ff7a18" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1c2128"/><stop offset=".4" stop-color="#8b949e"/><stop offset=".6" stop-color="#6e7681"/><stop offset="1" stop-color="#1c2128"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="7"/></filter>
+    <clipPath id="c"><rect width="480" height="220" rx="16"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="480" height="220" fill="url(#bg)"/>
+    <rect width="480" height="220" fill="url(#grid)"/>
+    <!-- opposed nozzles -->
+    <rect x="84" y="46" width="72" height="36" fill="url(#steel)"/>
+    <rect x="78" y="80" width="84" height="7" rx="2" fill="url(#steel)"/>
+    <rect x="78" y="161" width="84" height="7" rx="2" fill="url(#steel)"/>
+    <rect x="84" y="166" width="72" height="60" fill="url(#steel)"/>
+  </g>
+
+  <rect x="14" y="14" width="252" height="24" rx="12" fill="#fbbf24" fill-opacity=".12" stroke="#fbbf24" stroke-opacity=".5"/>
+  <text x="140" y="30" text-anchor="middle" class="mono" font-size="11.5" letter-spacing="1" fill="#fde68a">CANTERA 1D · EXTINCTION · NOx</text>
+
+  <!-- streamlines -->
+  <g fill="none" stroke-width="1.4">
+    <g stroke="#7dd3fc" stroke-opacity=".55">
+      <path class="flow" d="M112 90C112 108 92 115 28 117"/>
+      <path class="flow" d="M98 90C98 103 80 110 20 111"/>
+      <path class="flow" d="M128 90C128 108 148 115 212 117"/>
+      <path class="flow" d="M142 90C142 103 160 110 220 111"/>
+    </g>
+    <g stroke="#fbbf24" stroke-opacity=".55">
+      <path class="flow" d="M112 158C112 140 92 131 28 128"/>
+      <path class="flow" d="M98 158C98 146 80 136 20 134"/>
+      <path class="flow" d="M128 158C128 140 148 131 212 128"/>
+      <path class="flow" d="M142 158C142 146 160 136 220 134"/>
+    </g>
+  </g>
+
+  <!-- flat flame sheet -->
+  <ellipse cx="120" cy="122" rx="82" ry="10" fill="#ff7a18" opacity=".5" filter="url(#blur)"/>
+  <ellipse class="sheet" cx="120" cy="122" rx="76" ry="4.5" fill="url(#sheetG)"/>
+
+  <g class="mono" font-size="11">
+    <text x="170" y="68" fill="#7dd3fc">air</text>
+    <text x="170" y="188" fill="#fde68a">cracked NH₃</text>
+  </g>
+
+  <!-- S-curve -->
+  <path d="M296 100H460M296 143H460" stroke="#30363d" stroke-dasharray="2 4"/>
+  <path d="M296 56V186H464" fill="none" stroke="#6e7681" stroke-width="1.4"/>
+  <path d="M292 62L296 54L300 62ZM458 182L466 186L458 190Z" fill="#6e7681"/>
+  <path d="M304 178C360 178 410 177 460 176" fill="none" stroke="#6e7681" stroke-width="2"/>
+  <path d="M438 118C426 142 372 164 308 176" fill="none" stroke="#fbbf24" stroke-opacity=".6" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <path d="M304 70C360 74 410 86 438 118" fill="none" stroke="#fbbf24" stroke-width="2.4"/>
+  <circle class="ring" cx="438" cy="118" r="4.5" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+  <circle cx="438" cy="118" r="4.5" fill="#fff1b8"/>
+  <g class="mono" font-size="11" fill="#8b949e">
+    <text x="428" y="122" text-anchor="end" fill="#fde68a">extinction</text>
+    <text x="464" y="204" text-anchor="end">strain rate</text>
+    <text x="290" y="64" text-anchor="end">T<tspan font-size="8.5" dy="2">max</tspan></text>
+  </g>
+
+  <rect x=".5" y=".5" width="479" height="219" rx="16" fill="none" stroke="#30363d"/>
+</svg>

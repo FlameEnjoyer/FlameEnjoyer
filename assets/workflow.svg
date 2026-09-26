@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="t d">
+  <title id="t">How I work</title>
+  <desc id="d">Five-step loop: combustion experiments and CFD produce data, the data trains surrogate models, the surrogates drive multi-objective optimization, and the result is cleaner hydrogen and ammonia energy systems. The optimum is validated back in CFD.</desc>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .flow { stroke-dasharray: 6 7; animation: flow 1.1s linear infinite; }
+    .back { stroke-dasharray: 5 8; animation: flow 1.6s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -13; } }
+    .flick { transform-box: fill-box; transform-origin: 50% 100%; animation: flick 1.6s ease-in-out infinite; }
+    @keyframes flick { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(.93, 1.08); } }
+    .pop { transform-box: fill-box; transform-origin: center; animation: pop 2.4s ease-in-out infinite; }
+    @keyframes pop { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+    .ring { transform-box: fill-box; transform-origin: center; animation: ring 2s ease-out infinite; }
+    @keyframes ring { 0% { transform: scale(.6); opacity: .9; } 100% { transform: scale(2.2); opacity: 0; } }
+    .blink { animation: blink 1.8s ease-in-out infinite; }
+    @keyframes blink { 0%, 100% { opacity: .3; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset=".6" stop-color="#11151d"/>
+      <stop offset="1" stop-color="#1a1310"/>
+    </linearGradient>
+    <linearGradient id="gFlame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff4d00"/>
+      <stop offset="1" stop-color="#ffb000"/>
+    </linearGradient>
+    <linearGradient id="c1" gradientUnits="userSpaceOnUse" x1="212" x2="266"><stop offset="0" stop-color="#ff6b1a"/><stop offset="1" stop-color="#fbbf24"/></linearGradient>
+    <linearGradient id="c2" gradientUnits="userSpaceOnUse" x1="454" x2="508"><stop offset="0" stop-color="#fbbf24"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+    <linearGradient id="c3" gradientUnits="userSpaceOnUse" x1="696" x2="750"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="c4" gradientUnits="userSpaceOnUse" x1="938" x2="992"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#34d399"/></linearGradient>
+    <linearGradient id="cb" gradientUnits="userSpaceOnUse" x1="842" x2="116"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#ff6b1a"/></linearGradient>
+    <clipPath id="card"><rect width="1200" height="340" rx="20"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+  </g>
+
+  <!-- connectors -->
+  <g stroke-width="2.2" fill="none">
+    <path class="flow" d="M212 94H258" stroke="url(#c1)"/>
+    <path class="flow" d="M454 94H500" stroke="url(#c2)"/>
+    <path class="flow" d="M696 94H742" stroke="url(#c3)"/>
+    <path class="flow" d="M938 94H984" stroke="url(#c4)"/>
+    <path class="back" d="M842 230C842 300 116 300 116 240" stroke="url(#cb)"/>
+  </g>
+  <path d="M257 88L266 94L257 100Z" fill="#fbbf24"/>
+  <path d="M499 88L508 94L499 100Z" fill="#38bdf8"/>
+  <path d="M741 88L750 94L741 100Z" fill="#a78bfa"/>
+  <path d="M983 88L992 94L983 100Z" fill="#34d399"/>
+  <path d="M110 240L116 230L122 240Z" fill="#ff6b1a"/>
+  <g fill="#fff">
+    <circle r="3"><animateMotion dur="1.4s" repeatCount="indefinite" path="M212 94H258"/><animate attributeName="opacity" values="0;1;0" dur="1.4s" repeatCount="indefinite"/></circle>
+    <circle r="3"><animateMotion dur="1.4s" begin=".35s" repeatCount="indefinite" path="M454 94H500"/><animate attributeName="opacity" values="0;1;0" dur="1.4s" begin=".35s" repeatCount="indefinite"/></circle>
+    <circle r="3"><animateMotion dur="1.4s" begin=".7s" repeatCount="indefinite" path="M696 94H742"/><animate attributeName="opacity" values="0;1;0" dur="1.4s" begin=".7s" repeatCount="indefinite"/></circle>
+    <circle r="3"><animateMotion dur="1.4s" begin="1.05s" repeatCount="indefinite" path="M938 94H984"/><animate attributeName="opacity" values="0;1;0" dur="1.4s" begin="1.05s" repeatCount="indefinite"/></circle>
+    <circle r="3"><animateMotion dur="4s" repeatCount="indefinite" path="M842 230C842 300 116 300 116 240"/><animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite"/></circle>
+  </g>
+  <text x="479" y="318" text-anchor="middle" class="mono" font-size="14" fill="#8b949e">↻  validate the optimum in CFD, then iterate</text>
+
+  <!-- node cards -->
+  <g stroke-width="1.5">
+    <rect x="26" y="28" width="180" height="196" rx="16" fill="#161b22" stroke="#ff6b1a" stroke-opacity=".45"/>
+    <rect x="268" y="28" width="180" height="196" rx="16" fill="#161b22" stroke="#fbbf24" stroke-opacity=".45"/>
+    <rect x="510" y="28" width="180" height="196" rx="16" fill="#161b22" stroke="#38bdf8" stroke-opacity=".45"/>
+    <rect x="752" y="28" width="180" height="196" rx="16" fill="#161b22" stroke="#a78bfa" stroke-opacity=".45"/>
+    <rect x="994" y="28" width="180" height="196" rx="16" fill="#161b22" stroke="#34d399" stroke-opacity=".45"/>
+  </g>
+  <g class="mono" font-size="12">
+    <text x="40" y="52" fill="#ff6b1a">01</text>
+    <text x="282" y="52" fill="#fbbf24">02</text>
+    <text x="524" y="52" fill="#38bdf8">03</text>
+    <text x="766" y="52" fill="#a78bfa">04</text>
+    <text x="1008" y="52" fill="#34d399">05</text>
+  </g>
+  <g class="sans" text-anchor="middle">
+    <g font-size="20" font-weight="700" fill="#e6edf3">
+      <text x="116" y="164">Combustion</text>
+      <text x="358" y="164">Data</text>
+      <text x="600" y="164">Surrogates</text>
+      <text x="842" y="164">Optimization</text>
+      <text x="1084" y="164">Clean Energy</text>
+    </g>
+    <g font-size="14.5" fill="#8b949e">
+      <text x="116" y="190">Experiments · Cantera</text>
+      <text x="116" y="210">Fluent · OpenFOAM</text>
+      <text x="358" y="190">DoE sweeps · CFD QoIs</text>
+      <text x="358" y="210">flame images · NOx</text>
+      <text x="600" y="190">GP/Kriging · GBMs · NNs</text>
+      <text x="600" y="210">scikit-learn · PyTorch</text>
+      <text x="842" y="190">NSGA-II/III · Pareto</text>
+      <text x="842" y="210">sensitivity analysis</text>
+      <text x="1084" y="190">low-NOx H₂ / NH₃</text>
+      <text x="1084" y="210">turbines &amp; systems</text>
+    </g>
+  </g>
+
+  <!-- 01 flame -->
+  <g transform="translate(116 94)">
+    <circle r="36" fill="#ff6b1a" fill-opacity=".12" stroke="#ff6b1a" stroke-opacity=".6" stroke-width="1.5"/>
+    <g class="flick">
+      <path d="M0-24C7-13 17-5 17 8A17 17 0 0 1-17 8C-17-5-7-13 0-24Z" fill="url(#gFlame)"/>
+      <path d="M0-1C4 4 8 8 8 13A8 8 0 0 1-8 13C-8 8-4 4 0-1Z" fill="#ffe08a"/>
+    </g>
+  </g>
+
+  <!-- 02 data -->
+  <g transform="translate(358 94)" fill="none" stroke="#fbbf24" stroke-width="2.4">
+    <circle r="36" fill="#fbbf24" fill-opacity=".1" stroke-opacity=".6" stroke-width="1.5"/>
+    <ellipse cy="-14" rx="16" ry="6"/>
+    <path d="M-16-14V14A16 6 0 0 0 16 14V-14"/>
+    <path d="M-16 0A16 6 0 0 0 16 0"/>
+    <circle class="blink" cx="9" cy="-3" r="1.8" fill="#fbbf24" stroke="none"/>
+    <circle class="blink" cx="9" cy="11" r="1.8" fill="#fbbf24" stroke="none" style="animation-delay:-.9s"/>
+  </g>
+
+  <!-- 03 neural network -->
+  <g transform="translate(600 94)">
+    <circle r="36" fill="#38bdf8" fill-opacity=".1" stroke="#38bdf8" stroke-opacity=".6" stroke-width="1.5"/>
+    <g stroke="#38bdf8" stroke-opacity=".45" stroke-width="1.2">
+      <path d="M-18-14L0-18M-18-14L0-6M-18-14L0 6M-18-14L0 18M-18 0L0-18M-18 0L0-6M-18 0L0 6M-18 0L0 18M-18 14L0-18M-18 14L0-6M-18 14L0 6M-18 14L0 18M0-18L18 0M0-6L18 0M0 6L18 0M0 18L18 0"/>
+    </g>
+    <g fill="#38bdf8">
+      <circle cx="-18" cy="-14" r="3.5"/><circle cx="-18" cy="0" r="3.5"/><circle cx="-18" cy="14" r="3.5"/>
+      <circle cx="0" cy="-18" r="3.5"/><circle cx="0" cy="-6" r="3.5"/><circle cx="0" cy="6" r="3.5"/><circle cx="0" cy="18" r="3.5"/>
+      <circle class="ring" cx="18" cy="0" r="4.5" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+      <circle cx="18" cy="0" r="4.5" fill="#bae6fd"/>
+    </g>
+  </g>
+
+  <!-- 04 pareto front -->
+  <g transform="translate(842 94)">
+    <circle r="36" fill="#a78bfa" fill-opacity=".1" stroke="#a78bfa" stroke-opacity=".6" stroke-width="1.5"/>
+    <path d="M-20-20V20H22" fill="none" stroke="#8b949e" stroke-width="1.6"/>
+    <g fill="#6e7681">
+      <circle cx="4" cy="-10" r="1.8"/><circle cx="12" cy="-2" r="1.8"/><circle cx="-2" cy="-4" r="1.8"/><circle cx="14" cy="-12" r="1.8"/>
+    </g>
+    <path d="M-14-16Q-12 12 18 14" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <g fill="#a78bfa">
+      <circle cx="-14" cy="-16" r="2.4"/><circle cx="-11.3" cy="-3.6" r="2.4"/><circle cx="4.8" cy="11.4" r="2.4"/><circle cx="18" cy="14" r="2.4"/>
+      <circle class="ring" cx="-5" cy="5.5" r="4" fill="none" stroke="#a78bfa" stroke-width="1.5"/>
+      <circle cx="-5" cy="5.5" r="4" fill="#ddd6fe"/>
+    </g>
+  </g>
+
+  <!-- 05 energy -->
+  <g transform="translate(1084 94)">
+    <circle r="36" fill="#34d399" fill-opacity=".1" stroke="#34d399" stroke-opacity=".6" stroke-width="1.5"/>
+    <path class="pop" d="M4-24L-13 4H-1L-5 24L13-5H1Z" fill="#34d399"/>
+  </g>
+
+  <rect x=".5" y=".5" width="1199" height="339" rx="20" fill="none" stroke="#30363d"/>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="220" viewBox="0 0 480 220" role="img" aria-labelledby="t">
+  <title id="t">Partially cracked ammonia swirl flame next to a stability map</title>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .wing { transform-box: fill-box; transform-origin: 50% 100%; animation: flick 1.6s ease-in-out infinite; }
+    .w2 { animation-delay: -.8s; }
+    @keyframes flick { 0%, 100% { transform: scale(1, 1) skewX(0deg); } 50% { transform: scale(.95, 1.06) skewX(1.5deg); } }
+    .swirl { stroke-dasharray: 6 6; animation: swirl 1.2s linear infinite; }
+    @keyframes swirl { to { stroke-dashoffset: -12; } }
+    .pulse { animation: pulse 2.4s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#1f130c"/></linearGradient>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#c9d1d9" stroke-opacity=".05"/></pattern>
+    <linearGradient id="nh3" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#fff1b8"/>
+      <stop offset=".3" stop-color="#ffb703"/>
+      <stop offset=".7" stop-color="#ff6b1a" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#ff3d00" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1c2128"/><stop offset=".4" stop-color="#8b949e"/><stop offset=".6" stop-color="#6e7681"/><stop offset="1" stop-color="#1c2128"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="c"><rect width="480" height="220" rx="16"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="480" height="220" fill="url(#bg)"/>
+    <rect width="480" height="220" fill="url(#grid)"/>
+
+    <!-- swirl burner -->
+    <rect x="106" y="180" width="48" height="50" fill="url(#steel)"/>
+    <path d="M112 192l10 8M126 192l10 8M140 192l8 6" stroke="#0d1117" stroke-opacity=".6" stroke-width="2"/>
+  </g>
+
+  <rect x="14" y="14" width="268" height="24" rx="12" fill="#ff6b1a" fill-opacity=".12" stroke="#ff6b1a" stroke-opacity=".5"/>
+  <text x="148" y="30" text-anchor="middle" class="mono" font-size="11.5" letter-spacing="1" fill="#ffb187">EXPERIMENTS · NH₂* IMAGING · NO</text>
+
+  <!-- V-shaped swirl flame -->
+  <g class="pulse" filter="url(#blur)" fill="#ff7a18" opacity=".6">
+    <path d="M122 178C110 148 86 104 64 64C92 100 116 144 132 178Z"/>
+    <path d="M138 178C150 148 174 104 196 64C168 100 144 144 128 178Z"/>
+  </g>
+  <path class="wing" d="M122 178C110 148 86 104 64 64C92 100 116 144 132 178Z" fill="url(#nh3)"/>
+  <path class="wing w2" d="M138 178C150 148 174 104 196 64C168 100 144 144 128 178Z" fill="url(#nh3)"/>
+  <rect x="100" y="176" width="60" height="8" rx="2" fill="url(#steel)"/>
+
+  <ellipse class="swirl" cx="130" cy="150" rx="54" ry="11" fill="none" stroke="#fbbf24" stroke-opacity=".6" stroke-width="1.4"/>
+  <path d="M126 157L135 161L126 165Z" fill="#fbbf24" fill-opacity=".85"/>
+
+  <g class="mono" font-size="11">
+    <text x="202" y="70" fill="#ffb187">NH₂*</text>
+    <text x="166" y="206" fill="#8b949e">NH₃/H₂/N₂ + air</text>
+  </g>
+
+  <!-- stability map -->
+  <path d="M318 100H460M318 142H460" stroke="#30363d" stroke-dasharray="2 4"/>
+  <path d="M338 184C346 130 356 92 384 84C412 78 436 104 450 184Z" fill="#ff6b1a" fill-opacity=".14" stroke="#ff6b1a" stroke-opacity=".6" stroke-width="1.5"/>
+  <path d="M318 58V184H462" fill="none" stroke="#6e7681" stroke-width="1.4"/>
+  <path d="M314 64L318 56L322 64ZM456 180L464 184L456 188Z" fill="#6e7681"/>
+  <g fill="#e6edf3">
+    <circle cx="344.7" cy="146.6" r="2.4"/><circle cx="353.5" cy="116.8" r="2.4"/><circle cx="366.2" cy="95.4" r="2.4"/>
+    <circle cx="384" cy="84" r="2.4"/><circle cx="404.1" cy="85.8" r="2.4"/><circle cx="422.3" cy="101.8" r="2.4"/><circle cx="437.6" cy="133.8" r="2.4"/>
+  </g>
+  <g class="mono" font-size="11" fill="#8b949e">
+    <text x="394" y="148" text-anchor="middle" font-size="12" fill="#ffb187">stable</text>
+    <text x="462" y="202" text-anchor="end">φ</text>
+    <text x="312" y="66" text-anchor="end">x<tspan font-size="8.5" dy="2">NH₃</tspan></text>
+  </g>
+
+  <rect x=".5" y=".5" width="479" height="219" rx="16" fill="none" stroke="#30363d"/>
+</svg>
