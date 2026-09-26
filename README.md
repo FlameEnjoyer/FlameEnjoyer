@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg?v=2" width="100%" alt="Roby Pratama Sitepu: I study flames, and teach machines to make them cleaner."/>
+<img src="assets/banner.svg?v=3" width="100%" alt="Roby Pratama Sitepu: I study flames, and teach machines to make them cleaner."/>
 
 <a href="https://github.com/FlameEnjoyer"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=FF7A18&center=true&vCenter=true&width=760&height=44&lines=Combustion+Science+%C3%97+AI%2FML+%C3%97+Optimization" alt="Combustion Science × AI/ML × Optimization"/></a>
 

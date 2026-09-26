@@ -138,17 +138,17 @@
     </g>
 
     <!-- chips -->
-    <g class="mono" font-size="16" letter-spacing="1.3" text-anchor="middle">
-      <rect x="72" y="253" width="142" height="34" rx="17" fill="#ff6b1a" fill-opacity=".12" stroke="#ff6b1a" stroke-opacity=".55"/>
-      <text x="143" y="275.5" fill="#ffb187">COMBUSTION</text>
-      <rect x="225" y="253" width="65" height="34" rx="17" fill="#fbbf24" fill-opacity=".12" stroke="#fbbf24" stroke-opacity=".55"/>
-      <text x="257.5" y="275.5" fill="#fde68a">CFD</text>
-      <rect x="301" y="253" width="109" height="34" rx="17" fill="#38bdf8" fill-opacity=".12" stroke="#38bdf8" stroke-opacity=".55"/>
-      <text x="355.5" y="275.5" fill="#bae6fd">AI / ML</text>
-      <rect x="421" y="253" width="164" height="34" rx="17" fill="#a78bfa" fill-opacity=".12" stroke="#a78bfa" stroke-opacity=".55"/>
-      <text x="503" y="275.5" fill="#ddd6fe">OPTIMIZATION</text>
-      <rect x="596" y="253" width="98" height="34" rx="17" fill="#34d399" fill-opacity=".12" stroke="#34d399" stroke-opacity=".55"/>
-      <text x="645" y="275.5" fill="#a7f3d0">ENERGY</text>
+    <g class="mono" font-size="15" letter-spacing="1.2" text-anchor="middle">
+      <rect x="72" y="254" width="133" height="32" rx="16" fill="#ff6b1a" fill-opacity=".12" stroke="#ff6b1a" stroke-opacity=".55"/>
+      <text x="138.5" y="275.3" fill="#ffb187">COMBUSTION</text>
+      <rect x="215" y="254" width="61" height="32" rx="16" fill="#fbbf24" fill-opacity=".12" stroke="#fbbf24" stroke-opacity=".55"/>
+      <text x="245.5" y="275.3" fill="#fde68a">CFD</text>
+      <rect x="286" y="254" width="102" height="32" rx="16" fill="#38bdf8" fill-opacity=".12" stroke="#38bdf8" stroke-opacity=".55"/>
+      <text x="337" y="275.3" fill="#bae6fd">AI / ML</text>
+      <rect x="398" y="254" width="153" height="32" rx="16" fill="#a78bfa" fill-opacity=".12" stroke="#a78bfa" stroke-opacity=".55"/>
+      <text x="474.5" y="275.3" fill="#ddd6fe">OPTIMIZATION</text>
+      <rect x="561" y="254" width="92" height="32" rx="16" fill="#34d399" fill-opacity=".12" stroke="#34d399" stroke-opacity=".55"/>
+      <text x="607" y="275.3" fill="#a7f3d0">ENERGY</text>
     </g>
   </g>
   <rect x=".5" y=".5" width="1199" height="359" rx="20" fill="none" stroke="#30363d"/>
