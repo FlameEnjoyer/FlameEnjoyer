@@ -2,7 +2,7 @@
 
 <img src="assets/banner.svg" width="100%" alt="Roby Pratama Sitepu: I study flames, and teach machines to make them cleaner."/>
 
-<a href="https://github.com/FlameEnjoyer"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=FF7A18&center=true&vCenter=true&width=760&height=44&lines=Combustion+Science+%C3%97+AI%2FML+%C3%97+Optimization;Carbon-free+fuels%3A+hydrogen+%26+ammonia;CFD+%E2%86%92+surrogate+models+%E2%86%92+Pareto+fronts;Enjoying+flames+responsibly+(low-NOx+only)" alt="Combustion Science × AI/ML × Optimization"/></a>
+<a href="https://github.com/FlameEnjoyer"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=FF7A18&center=true&vCenter=true&width=760&height=44&lines=Combustion+Science+%C3%97+AI%2FML+%C3%97+Optimization" alt="Combustion Science × AI/ML × Optimization"/></a>
 
 <img src="https://komarev.com/ghpvc/?username=FlameEnjoyer&label=PROFILE%20VIEWS&color=ff6b1a&style=for-the-badge" alt="Profile views"/>
 <a href="https://github.com/FlameEnjoyer?tab=followers"><img src="https://img.shields.io/github/followers/FlameEnjoyer?label=FOLLOWERS&style=for-the-badge&logo=github&color=ff6b1a&labelColor=161b22" alt="Followers"/></a>
