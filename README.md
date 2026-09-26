@@ -6,7 +6,6 @@
 
 <img src="https://komarev.com/ghpvc/?username=FlameEnjoyer&label=PROFILE%20VIEWS&color=ff6b1a&style=for-the-badge" alt="Profile views"/>
 <a href="https://github.com/FlameEnjoyer?tab=followers"><img src="https://img.shields.io/github/followers/FlameEnjoyer?label=FOLLOWERS&style=for-the-badge&logo=github&color=ff6b1a&labelColor=161b22" alt="Followers"/></a>
-<img src="https://img.shields.io/badge/ITB-MECHANICAL%20ENGINEERING-1f6feb?style=for-the-badge&labelColor=161b22" alt="ITB Mechanical Engineering"/>
 
 </div>
 
@@ -18,7 +17,7 @@
 
 ### 🧑‍🔬 The Researcher
 
-- 🎓 Fast-track **B.Sc. + M.Sc. in Mechanical Engineering** at **Institut Teknologi Bandung (ITB)**
+- ⚙️ **Mechanical engineering** researcher working on **combustion and energy**
 - 🌱 Focused on **carbon-free fuels**: the combustion of **ammonia (NH₃)** and **hydrogen (H₂)**
 - 🔬 I bridge **physical experiments** and **computational modelling**: flames, chemical kinetics, CFD
 - 🤖 …then hand the heavy lifting to **ML surrogates** and **multi-objective optimization**
@@ -28,6 +27,7 @@
 
 ### 🚀 Current Quests
 
+- 🎓 **Doctoral research:** integrating **AI/ML, CFD and experiments** toward the optimization design of combustors for **partially cracked ammonia**
 - 🌀 **M.Sc. thesis:** design optimization of a **hydrogen micro gas turbine combustor**
 - 🔥 **Partially cracked NH₃ flames:** stability, flame shape and NO emissions, in collaboration with the **University of Tokyo**
 - ⚡ **NH₃-fired gas turbines:** reactor-network emission models and techno-economic optimization
@@ -90,14 +90,10 @@ Chemical reactor networks of rich-quench-lean NH₃/H₂ combustors (NOx, N₂O,
 <img src="https://img.shields.io/badge/Cantera-B3261E?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCc%2BPHBhdGggZmlsbD0nI2ZmZicgZD0nTTEyIDEuNWMyLjIgNSA3LjUgNy4yIDcuNSAxMy4yYTcuNSA3LjUgMCAwIDEtMTUgMEM0LjUgOC43IDkuOCA2LjUgMTIgMS41eicvPjwvc3ZnPg%3D%3D" alt="Cantera"/>
 <img src="https://img.shields.io/badge/OpenFOAM-2F5D9E?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCc%2BPHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzIuNicgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcgZD0nTTIuNSA0aDE5TDEyIDIxeicvPjwvc3ZnPg%3D%3D" alt="OpenFOAM"/>
 <img src="https://img.shields.io/badge/Ansys%20Fluent-FFB71B?style=for-the-badge&logo=ansys&logoColor=black" alt="Ansys Fluent"/>
-<img src="https://img.shields.io/badge/PyAbel-6D28D9?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCc%2BPGcgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzInPjxyZWN0IHg9JzIuNScgeT0nNycgd2lkdGg9JzE5JyBoZWlnaHQ9JzEzJyByeD0nMicvPjxjaXJjbGUgY3g9JzEyJyBjeT0nMTMuNScgcj0nMy42Jy8%2BPHBhdGggZD0nTTggN2wyLTNoNGwyIDMnLz48L2c%2BPC9zdmc%2B" alt="PyAbel"/>
-<img src="https://img.shields.io/badge/CoolProp-0E7490?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCc%2BPGcgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzIuMic%2BPHBhdGggZD0nTTEyIDIuNXM2LjUgNyA2LjUgMTEuNWE2LjUgNi41IDAgMCAxLTEzIDBDNS41IDkuNSAxMiAyLjUgMTIgMi41eicvPjxwYXRoIGQ9J005IDE1YTMgMyAwIDAgMCAzIDMnLz48L2c%2BPC9zdmc%2B" alt="CoolProp"/>
 
 **🧠 Machine Learning & Data**<br/>
 <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn"/>
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
-<img src="https://img.shields.io/badge/SMT%20·%20Kriging-7C3AED?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCc%2BPHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzIuNCcgZD0nTTEgMjBjNS41IDAgNi41LTE1IDExLTE1czUuNSAxNSAxMSAxNScvPjwvc3ZnPg%3D%3D" alt="SMT Kriging"/>
-<img src="https://img.shields.io/badge/XGBoost%20·%20LightGBM%20·%20CatBoost-0F766E?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCc%2BPGcgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzInPjxwYXRoIGQ9J00xMiA2djVNNiAxNnYtNWgxMnY1Jy8%2BPC9nPjxnIGZpbGw9JyNmZmYnPjxjaXJjbGUgY3g9JzEyJyBjeT0nNCcgcj0nMi42Jy8%2BPGNpcmNsZSBjeD0nNicgY3k9JzE4LjUnIHI9JzIuNicvPjxjaXJjbGUgY3g9JzE4JyBjeT0nMTguNScgcj0nMi42Jy8%2BPC9nPjwvc3ZnPg%3D%3D" alt="Gradient boosting"/>
 <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
 <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white" alt="SciPy"/>
 <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas"/>
@@ -105,9 +101,6 @@ Chemical reactor networks of rich-quench-lean NH₃/H₂ combustors (NOx, N₂O,
 
 **🎯 Optimization**<br/>
 <img src="https://img.shields.io/badge/pymoo-5B21B6?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCc%2BPGcgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzInPjxwYXRoIGQ9J00zIDJ2MTloMTknLz48cGF0aCBkPSdNNyA0cTEgMTIuNSAxNCAxMy41Jy8%2BPC9nPjxjaXJjbGUgY3g9JzEwLjMnIGN5PScxMy42JyByPScyLjQnIGZpbGw9JyNmZmYnLz48L3N2Zz4%3D" alt="pymoo"/>
-<img src="https://img.shields.io/badge/NSGA--II%20%2F%20III-6D28D9?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCc%2BPGcgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzInPjxwYXRoIGQ9J001IDNjMCA2IDE0IDEyIDE0IDE4TTE5IDNjMCA2LTE0IDEyLTE0IDE4Jy8%2BPHBhdGggZD0nTTcuNSA3LjVoOU03LjUgMTYuNWg5Jy8%2BPC9nPjwvc3ZnPg%3D%3D" alt="NSGA-II / III"/>
-<img src="https://img.shields.io/badge/Genetic%20Algorithms-7C3AED?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCc%2BPGcgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzInPjxwYXRoIGQ9J001IDNjMCA2IDE0IDEyIDE0IDE4TTE5IDNjMCA2LTE0IDEyLTE0IDE4Jy8%2BPHBhdGggZD0nTTcuNSA3LjVoOU03LjUgMTYuNWg5Jy8%2BPC9nPjwvc3ZnPg%3D%3D" alt="Genetic algorithms"/>
-<img src="https://img.shields.io/badge/Simulated%20Annealing-8B5CF6?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCc%2BPHBhdGggZmlsbD0nI2ZmZicgZD0nTTEyIDEuNWMyLjIgNSA3LjUgNy4yIDcuNSAxMy4yYTcuNSA3LjUgMCAwIDEtMTUgMEM0LjUgOC43IDkuOCA2LjUgMTIgMS41eicvPjwvc3ZnPg%3D%3D" alt="Simulated annealing"/>
 <img src="https://img.shields.io/badge/Sensitivity%20Analysis-A78BFA?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCc%2BPHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmJyBzdHJva2Utd2lkdGg9JzIuNCcgZD0nTTEgMjBjNS41IDAgNi41LTE1IDExLTE1czUuNSAxNSAxMSAxNScvPjwvc3ZnPg%3D%3D" alt="Sensitivity analysis"/>
 
 **⚙️ Energy & Process Simulation**<br/>
@@ -120,21 +113,6 @@ Chemical reactor networks of rich-quench-lean NH₃/H₂ combustors (NOx, N₂O,
 <img src="https://skillicons.dev/icons?i=py,cpp,matlab,julia,ts,react,latex,git,linux,powershell,vscode&perline=11" alt="Python, C++, MATLAB, Julia, TypeScript, React, LaTeX, Git, Linux, PowerShell, VS Code"/>
 
 </div>
-
-## 🧮 Built From Scratch
-
-| | Project | What it does |
-|:-:|:--|:--|
-| 🌊 | [**FVM-Burger-Solver**](https://github.com/FlameEnjoyer/FVM-Burger-Solver) | 2D inviscid Burgers' equation with the finite volume method and TVD flux limiters (Minmod, Superbee, Van Leer, Koren, …), verified against the exact solution |
-| ✈️ | [**VII: Panel + Thwaites**](https://github.com/FlameEnjoyer/Viscous-Inviscid-Interaction-Panel-Thwaites-Method) | Viscous–inviscid interaction for NACA airfoils: a vortex panel method coupled with Thwaites' boundary layer, validated against JavaFoil |
-| 🛢️ | [**Riser Design App**](https://riser-design.streamlit.app/) | Streamlit app for subsea riser wall-thickness sizing and burst/collapse checks (API RP 1111, ASME B31.4/B31.8) |
-
-## ⚡ Beyond the Flame
-
-- 🛩️ **ORCA box-wing tiltrotor UAV** for disaster management: 🥈 2nd place, Indonesian National Flying Robot Competition 2023
-- 🌋 **Geothermal recuperative ORC** binary cycle integrated with a double-flash plant (Aspen HYSYS)
-- ☀️ **Solar PV techno-economics** (LCOE, ROI) to power agricultural machinery in Kertosari Village
-- 🌶️ **Agri-tech prototypes:** a solar chili dryer (up to 10× faster drying) and an automatic cinnamon peeler (6× productivity)
 
 ## 📈 GitHub Analytics
 
